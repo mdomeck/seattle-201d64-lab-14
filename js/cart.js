@@ -14,24 +14,36 @@ function loadCart() {
 // Make magic happen --- re-pull the Cart, clear out the screen and re-draw it
 function renderCart() {
   loadCart();
-  clearCart();
+  // clearCart();
   showCart();
 }
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
-function clearCart() {}
+function clearCart() {
+  var table = document.getElementById('cart');
+  table.innerHTML = '';
+}
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
-
-  // TODO: Find the table body
-
+  var table = document.getElementById('cart');
+  for (var i = 0; i < Array.length; i++) {
+    
+}
+  
   // TODO: Iterate over the items in the cart
   // TODO: Create a TR
   // TODO: Create a TD for the delete link, quantity,  and the item
   // TODO: Add the TR to the TBODY and each of the TD's to the TR
-
+  
 }
+var table = document.table.children;
+
+var row = document.createElement('tr');
+table.appendChild(row);
+
+
+
 
 function removeItemFromCart(event) {
 
