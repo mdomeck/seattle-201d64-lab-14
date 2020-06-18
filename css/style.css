@@ -1,1 +1,37 @@
 /* TODO: Make it awesome */
+
+body {
+  width: 960px;
+  background-color: limegreen;
+  margin: auto;
+}
+
+header {
+  background-color: linen;
+  min-height: 100px;
+  
+}
+
+header > h1 {
+  font-size: 20px;
+
+}
+
+header li {
+  display: inline-block;
+}
+
+nav > ul {
+  float: right;
+  margin: 10px, 10px;
+}
+
+main ol {
+  font-size: 15px;
+  margin-left: 30px;
+  
+}
+
+main {
+  margin: 100px;
+}
