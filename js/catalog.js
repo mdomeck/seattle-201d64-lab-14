@@ -39,10 +39,10 @@ function addSelectedItemToCart() {
   var pickItem = document.getElementById('items');
   var quantity = document.getElementById('quantity');
 
-  // TODO: suss out the item picked from the select list
-  // TODO: get the quantity
-  // TODO: using those, add one item to the Cart
-  new CartItem(pickItem.value, quantity.value);
+  // DONE: suss out the item picked from the select list
+  // DONE: get the quantity
+  // DONE: using those, add one item to the Cart
+  new Cart(pickItem.value, quantity.value);
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart

@@ -1,7 +1,7 @@
 /* TODO: Make it awesome */
 
 body {
-  width: 960px;
+  /* width: 960px; */
   background-color: limegreen;
   margin: auto;
 }
@@ -9,21 +9,35 @@ body {
 header {
   background-color: linen;
   min-height: 100px;
-  
+  text-align: center;
+
 }
 
 header > h1 {
-  font-size: 20px;
+  font-size: 40px;
+  font-family: cursive;
+}
 
+section header{
+  text-align: left;
+}
+
+section header > h1{
+  font-size: 30px;
+  margin: 10px;
 }
 
 header li {
   display: inline-block;
+  font-size: 30px;
+  margin: 10px;
+  
 }
 
 nav > ul {
   float: right;
-  margin: 10px, 10px;
+  margin: 10px 100px;
+  
 }
 
 main ol {
@@ -32,6 +46,33 @@ main ol {
   
 }
 
+ol li {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
 main {
   margin: 100px;
+}
+
+legend {
+  display: none;
+}
+
+label {
+  margin: 50px;
+}
+
+select {
+  margin: 30px;
+  font-size: 30px;
+}
+
+input {
+  margin: 30px;
+  font-size: 30px;
+}
+
+label > span {
+  font-size: 30px;
 }

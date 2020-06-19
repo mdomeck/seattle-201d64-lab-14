@@ -14,14 +14,14 @@ function loadCart() {
 // Make magic happen --- re-pull the Cart, clear out the screen and re-draw it
 function renderCart() {
   loadCart();
-  // clearCart();
+  clearCart();
   showCart();
 }
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
 function clearCart() {
   var table = document.getElementById('cart');
-  table.innerHTML = '';
+  table.tBodies[0].innerHTML = '';
 }
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
@@ -29,18 +29,26 @@ function showCart() {
   var table = document.getElementById('cart');
   for (var i = 0; i < Array.length; i++) {
     
-}
-  
-  // TODO: Iterate over the items in the cart
-  // TODO: Create a TR
-  // TODO: Create a TD for the delete link, quantity,  and the item
-  // TODO: Add the TR to the TBODY and each of the TD's to the TR
-  
-}
-var table = document.table.children;
+    var listContent = document.createElement('tr');
+    var remove = document.createElement('td');
+    var quantity = document.createElement('td');
+    var item = document.createElement('td');
+    remove.textContent = Array[i].item;
+    listContent.appendChild(remove);
+    quantity.textContent = Array[i].quantity;
+    listContent.appendChild(quantity);
+    item.textContent = Array[i].item;
+    listContent.appendChild(item);
+    table.tBodies[0].appendChild(listContent);
 
-var row = document.createElement('tr');
-table.appendChild(row);
+}
+  // DONE: Iterate over the items in the cart
+  // DONE: Create a TR
+  // DONE: Create a TD for the delete link, quantity,  and the item
+  // DONE: Add the TR to the TBODY and each of the TD's to the TR
+
+}
+
 
 
 
